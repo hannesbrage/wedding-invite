@@ -1,13 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #eaf4e0; /* Ljusgrön bakgrund */
+    color: #2c3e50;
     text-align: center;
     padding: 20px;
+    background-image: url('forest.jpg'); /* Bakgrundsbild med skogstema */
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 8px;
     max-width: 400px;
@@ -16,7 +19,7 @@ body {
 }
 
 h1, h2 {
-    color: #2c3e50;
+    color: #1d5c2e; /* Mörkgrön rubrik */
 }
 
 form {
@@ -27,23 +30,25 @@ form {
 label {
     margin-top: 10px;
     font-weight: bold;
+    color: #2c3e50;
 }
 
 input, select, button {
     margin-top: 5px;
-    padding: 8px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    border: 1px solid #4a7c59;
     border-radius: 4px;
     font-size: 16px;
 }
 
 button {
-    background-color: #3498db;
+    background-color: #1d5c2e; /* Mörkgrön knapp */
     color: white;
     border: none;
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #145230; /* Ännu mörkare grön vid hover */
 }
