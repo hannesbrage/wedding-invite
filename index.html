@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bröllopsinbjudan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Välkommen till vårt bröllop!</h1>
+        <p>Vi ser fram emot att fira med dig den 8 augusti.</p>
+
+        <h2>Anmälan</h2>
+        <form id="rsvp-form">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="attend">Deltar fredag 8 augusti?</label>
+            <select id="attend" name="attend" required>
+                <option value="ja">Ja</option>
+                <option value="nej">Nej</option>
+            </select>
+
+            <label for="diet">Specialkost?</label>
+            <input type="text" id="diet" name="diet" placeholder="Ex. vegetariskt, glutenfritt">
+
+            <button type="submit">Skicka anmälan</button>
+        </form>
+
+        <p id="confirmation" style="display: none;">Tack för din anmälan!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
